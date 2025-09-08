@@ -1,5 +1,5 @@
 """
-kafka_consumer_strickland.py
+kafka_consumers_strickland.py
 
 Consume messages from a Kafka topic and process them.
 """

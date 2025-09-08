@@ -1,4 +1,4 @@
-# buzzline-02-case
+# buzzline-02-strickland
 
 Streaming data is often too big for any one machine. Apache Kafka is a popular streaming platform that uses publish-subscribe patterns:
 
@@ -26,6 +26,10 @@ In this task, we will download, install, configure, and start a local Kafka serv
 1. Install Windows Subsystem for Linux (Windows machines only)
 2. Install Kafka Streaming Platform
 3. Start the Kafka service (leave the terminal open).
+        wsl -d Ubuntu
+        cd ~/kafka
+        bin/kafka-server-start.sh config/kraft/server.properties
+
 
 For detailed instructions, see:
 
@@ -74,14 +78,14 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.kafka_producer_case
+py -m producers.kafka_producer_strickland
 ```
 
 Mac/Linux:
 
 ```zsh
 source .venv/bin/activate
-python3 -m producers.kafka_producer_case
+python3 -m producers.kafka_producer_strickland
 ```
 
 ## Task 4. Start a Kafka Consumer
@@ -95,14 +99,14 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m consumers.kafka_consumer_case
+py -m consumers.kafka_consumers_strickland
 ```
 
 Mac/Linux:
 
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.kafka_consumer_case
+python3 -m consumers.kafka_consumers_strickland
 ```
 
 ## Later Work Sessions
